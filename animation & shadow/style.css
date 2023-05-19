@@ -1,0 +1,52 @@
+@keyframes anima{
+    0%{top: 0; left: 0; background-color: black;}
+    25%{top: 0; left: 400px; background-color: #df1616; transform: rotate(90deg);}
+    50%{top: 400px; left: 400px; background-color: #436329; transform: rotate(180deg);}
+    75%{top: 400px; left: 0; background-color: #f5ea0e; transform: rotate(270deg);}
+    100%{top: 0; left: 0; background-color: #101d8f; transform: rotate(360deg);}
+}
+
+@keyframes anima-short{
+    0%{top: 0; left: 0; background-color: #e10f0f;}
+    25%{top: 0; left: 400px; background-color: #6adf16; transform: rotate(90deg);}
+    50%{top: 400px; left: 400px; background-color: #1b969f; transform: rotate(180deg);}
+    75%{top: 400px; left: 0; background-color: #630ef5; transform: rotate(270deg);}
+    100%{top: 0; left: 0; background-color: #80108f; transform: rotate(360deg);}
+}
+
+.ani{
+    width: 100px;
+    height: 100px;
+    position: relative;
+    border-radius: 50%;
+    box-shadow: 10px 10px 15px black;
+    animation-name: anima;
+    animation-duration: 6s;
+    animation-delay: 1s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: ease-in;
+}
+
+.ani2{
+    width: 100px;
+    height: 100px;
+    position: relative;
+    margin-top: 50px;
+    box-shadow: 10px 10px 15px #ca0dcaaa inset;
+    animation-name: anima;
+    animation-duration: 6s;
+    animation-delay: 1s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: linear;
+}
+
+.ani3{
+    width: 100px;
+    height: 100px;
+    position: relative;
+    margin-top: 50px;
+    box-shadow: 10px 10px 5px #0d5ccaaa, 10px 10px 5px #0dcabdaa, 10px 10px 5px #9eca0daa;
+    animation: anima-short 6s ease-out 1s infinite alternate;
+}
